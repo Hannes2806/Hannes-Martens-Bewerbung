@@ -12,30 +12,23 @@
 <body>
     <svg style="display: none;">
         <symbol id="star-marineblau-filled" viewBox="0 0 24 24">
-            <path style="fill:#0D1B2A;"
-                d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.401 8.171L12 18.897l-7.335 3.866 1.401-8.171L.132 9.21l8.2-1.192z">
-            </path>
+            <path style="fill:#0D1B2A;" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.401 8.171L12 18.897l-7.335 3.866 1.401-8.171L.132 9.21l8.2-1.192z"></path>
         </symbol>
         <symbol id="star-marineblau-empty" viewBox="0 0 24 24" fill="none" stroke="#0D1B2A" stroke-width="2">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"></path>
         </symbol>
         <symbol id="star-marineblau-half" viewBox="0 0 24 24">
-            <!-- Leerer Stern -->
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22
-           12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" fill="none" stroke="#0D1B2A" stroke-width="2" />
-
-            <!-- Clipping-Rechteck -->
-            <clipPath id="clip-half">
-                <rect x="0" y="0" width="12" height="24" />
-            </clipPath>
-
-            <!-- Voller Stern, links halb sichtbar -->
-            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 
-           1.401 8.171L12 18.897l-7.335 3.866 
-           1.401-8.171L.132 9.21l8.2-1.192z" fill="#0D1B2A" clip-path="url(#clip-half)" />
+            <defs>
+                <linearGradient id="half-fill" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="50%" stop-color="#0D1B2A"></stop>
+                  <stop offset="50%" stop-color="transparent"></stop>
+                </linearGradient>
+              </defs>
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 
+                   1.401 8.171L12 18.897l-7.335 3.866 
+                   1.401-8.171L.132 9.21l8.2-1.192z" fill="url(#half-fill)" stroke="#0D1B2A" stroke-width="2"></path>
         </symbol>
-        <symbol id="download-icon" viewBox="0 0 24 24" fill="none" stroke="#0D1B2A" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+        <symbol id="download-icon" viewBox="0 0 24 24" fill="none" stroke="#0D1B2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
