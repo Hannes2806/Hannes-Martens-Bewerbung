@@ -635,3 +635,10 @@ footer a {
 footer a:hover {
     color:rgba(59, 124, 124, 0.8);
 }
+
+.copyright {
+    padding-top: 2rem;
+    color: white;
+    font-size: 1.3rem;
+    max-width: 140rem;
+}
