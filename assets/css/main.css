@@ -571,8 +571,7 @@ main p {
     display:flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 5rem;
-    padding-top: 0rem;
+    padding: 0rem 2rem 5rem 2rem;
     width: 100vw;
     background-color: rgba(59, 124, 124, 0.8);
     scroll-margin-top: 6rem;
