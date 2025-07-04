@@ -127,7 +127,6 @@ main h3 {
 }
 
 main p {
-    text-align: justify;
     font-size: 1.8rem;
 }
 
@@ -203,6 +202,9 @@ main p {
     margin: 0rem auto 3rem auto;
     box-shadow: 0rem 0rem 0.3rem rgba(210, 232, 255, 0.5);
 }
+.me__text p {
+    text-align: left;
+}
 
 @media (min-width: 36em) {
     .me-container {
@@ -213,6 +215,9 @@ main p {
         float: right;  /* Bild wird rechts platziert */
         margin: 0 0 0.5rem 2rem; /* Abstand zum Text */
         width: 25rem; 
+    }
+    .me__text p {
+    text-align: justify;
     }
     .clearfix::after {
         content: "";
@@ -587,6 +592,7 @@ main p {
 }
 .contact__column p {
     display: block;
+    text-align: left;
 }
 .quote-transparent {
     background-color: transparent;
