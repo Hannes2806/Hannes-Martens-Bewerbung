@@ -576,13 +576,10 @@ main p {
     display:flex;
     align-items: center;
     flex-direction: column;
-    padding: 0rem 2rem 5rem 2rem;
+    padding: 4rem 2rem 5rem 2rem;
     width: 100vw;
     background-color: rgba(59, 124, 124, 0.8);
     scroll-margin-top: 6rem;
-}
-#contact h2 {
-    padding-top: 3rem;
 }
 .contact-container {
     display:flex;
@@ -594,18 +591,6 @@ main p {
     display: block;
     text-align: left;
 }
-.quote-transparent {
-    background-color: transparent;
-}
-.quote-transparent::after {
-    content: "";
-    display: block;
-    background-color: #0D1B2A;
-    height: 0.1rem;
-    width: 6.5rem;
-    margin: 0rem auto 0rem auto;
-    box-shadow: 0rem 0rem 0.3rem rgba(13,27,42,0.5);
-}
 @media (min-width: 36em) {
     .clearfix::after {
         content: "";
@@ -615,11 +600,7 @@ main p {
 }
 
 @media (min-width: 62em) {
-    .quote-transparent::after {
-        height: 0.18rem;
-        width: 11rem;
-        box-shadow: 0rem 0rem 0.4rem rgba(13,27,42,0.5);
-    }
+    
 }
 
 
